@@ -1,0 +1,10 @@
+{
+  "include": ["./src/scripts/ts"],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "noEmitOnError": true,
+    "lib": ["es5","es6","es7","dom"]
+  }
+}

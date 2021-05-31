@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>找回密码</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="http://10.9.47.242:3000/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="http://10.9.47.242:3000/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="http://10.9.47.242:3000/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="http://10.9.47.242:3000/css/animate.css" rel="stylesheet">
+    <link href="http://10.9.47.242:3000/css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-7"  style="margin-left: 50%;transform: translateX(-50%);">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <div class="ibox-tools">
+
+
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-6 b-r" style="height: 200px;">
+                                <h3 class="m-t-none m-b">邮箱找回</h3>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="email" id="username" placeholder="请输入您的账号" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="my-email" placeholder="请输入您注册的E-mail" class="form-control">
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary m-t-n-xs" id="send-msg" type="submit"><strong>发送</strong>
+                                        </button>
+                                        <a class="btn btn-sm btn-info" style="position: relative;left: 30px;
+                                        top: -2px;" href="http://10.9.47.242:3000/login.html">去登录</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>还没有账号</h4>
+                                <p>您可以注册一个新账号</p>
+                                <p class="text-center">
+                                    <a href="http://10.9.47.242:3000/register.html"><i class="fa fa-sign-in big-icon"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="http://10.9.47.242:3000/js/jquery.min.js?v=2.1.4"></script>
+    <script src="http://10.9.47.242:3000/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="http://10.9.47.242:3000/layer/layer.js"></script>
+
+    <!-- 自定义js -->
+    <!-- <script src="http://10.9.47.242:3000/js/content.js?v=1.0.0"></script> -->
+
+    <!-- iCheck -->
+    <script src="http://10.9.47.242:3000/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+
+    <script>
+
+        let ids,time,myEmail;
+
+        $("#send-msg").click(function (e) {
+            if ($("#username").val()==="" || $("#my-email").val()==="") {
+                layer.msg("不能为空");
+                return;
+            }
+            this.disabled=true;
+            time = 60;
+            $("#send-msg strong").text(time+"秒后重新发送");
+
+            $.get("http://10.9.47.242:3000/findpass",{
+                username:$("#username").val(),
+                email:$("#my-email").val()
+            });
+
+            ids = setInterval(function () {
+                time--;
+                $("#send-msg strong").text(time+"秒后重新发送")
+                if (time<=0) {
+                    clearInterval(ids);
+                    ids = undefined;
+                    $("#send-msg strong").text("发送")
+                    $("#send-msg").prop("disabled",false);
+                }
+            },1000)
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

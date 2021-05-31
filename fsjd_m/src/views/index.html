@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东商城</title>
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/ts/main.js"></script>
+    <script src="./scripts/ts/index.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <div id="m-layout">
+        <div class="nav-bar flex-box">
+            <div class="nav-left" v-bind="Sotremain.name">
+
+            </div>
+            <div class="nav-center">
+                <p v-bind="storemain.navName"></p>
+            </div>
+            <div class="nav-right">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="show-con">
+        <div class="s-home" v-route="home">
+            <div class="s-home-slideshow" slide-start="on">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_0.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_5.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_6.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/slide_7.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="s-home-options">
+                <ul class="flex-box">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_0.png.webp">
+                            <p>京东超市</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_1.png.webp">
+                            <p>数码电器</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_2.png.webp">
+                            <p>京东服饰</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_3.png.webp">
+                            <p>京东生鲜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_4.png.webp">
+                            <p>京东到家</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_5.png.webp">
+                            <p>充值缴费</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_6.png.webp">
+                            <p>9.9拼</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_7.png.webp">
+                            <p>领券</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_8.png.webp">
+                            <p>领津贴</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/option_9.png.webp">
+                            <p>PLUS会员</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="s-home-seckill show-mes-box">
+                <div class="home-seckill-cap">
+                    <div class="flex-box flex-right seckill-cap">
+                        <div class="flex-box">
+                            <span class="seckill-cap-left">京东秒杀</span>
+                            <b class="run-time"><span>12</span><img src="../../public/images/seckill_icon.png"></b>
+                            <div class="seckill-cap-con">
+                                <span>00</span> :
+                                <span>00</span> :
+                                <span>00</span>
+                            </div>
+                        </div>
+                        <p>
+                            <a href="javascript:void(0)">
+                                更多秒杀<span class="iconfont icon-iconfontjiantou2"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="home-seckill-con">
+                    <ul class="flex-box">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_0.jpg">
+                                <h3><span>￥</span>26</h3>
+                                <del>￥34.8</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_1.jpg">
+                                <h3><span>￥</span>39.9</h3>
+                                <del>￥110</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_2.jpg">
+                                <h3><span>￥</span>9.9</h3>
+                                <del>￥29.9</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_3.jpg">
+                                <h3><span>￥</span>18.8</h3>
+                                <del>￥49</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_4.jpg">
+                                <h3><span>￥</span>23.9</h3>
+                                <del>￥26.9</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/seckill_5.jpg">
+                                <h3><span>￥</span>949</h3>
+                                <del>￥1399</del>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s-home-classgoods show-mes-box">
+                <div class="home-classg-one">
+                    <div>
+                        <h3>爱动宝宝</h3>
+                        <p>玩出健康童年</p>
+                    </div>
+                    <div class="classg-item">
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_0.jpg.dpg">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_1.jpg.dpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="home-classg-one">
+                    <div>
+                        <h3>成熟时装</h3>
+                        <p>成熟时尚，优雅焕新</p>
+                    </div>
+                    <div class="classg-item">
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_2.jpg.dpg">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_3.jpg.dpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="home-classg-too">
+                    <div>
+                        <h3>动手洗车</h3>
+                        <p>洗车不求人</p>
+                        <div class="classg-item">
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/classgoods_4.jpg.dpg">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="../../public/images/classgoods_5.jpg.dpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-classg-too">
+                    <h3>爱动宝宝</h3>
+                    <p>玩出健康童年</p>
+                    <div class="classg-item">
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_6.jpg.dpg">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="../../public/images/classgoods_7.jpg.dpg">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="s-more-goods">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <div class="s-classify" v-route="classify">
+            分类
+        </div>
+        <div class="s-shopcar" v-route="shopcar">
+            <div class="s-mine-head flex-box">
+                <div class="s-d-nav-1 flex-box flex-right s-m-head-left">
+                    <a href="#home"><span class="iconfont icon-iconfontjiantou2 back-prev"></span></a>
+                </div>
+                <div class="s-d-nav-2 s-m-head-center">
+                    购物车
+                </div>
+                <div class="s-d-nav-1 flex-box flex-right s-m-head-right">
+                    
+                </div>
+            </div>
+
+            <div class="s-s-con">
+                <table>
+
+                </table>
+                <div class="go-shoping flex-box flex-right">
+                    <div class="go-shoping-left">
+                        <input type="checkbox" class="check-all" check-type="check-all">     
+                        <span>全选</span>                   
+                    </div>
+                    <div class="go-shoping-right">
+                        <div class="clear-float float-right car-price-all">
+                            <span>已选中<i class="check-num">0</i>件商品</span>
+                            <p>总价:<b class="sum-price">￥0</b><span class="iconfont icon-dengpao"></span></p>
+                            <a href="javascript:void(0)" class="gobuy">去结算</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <ul>
+                    <li class="flex-box">
+                        <div class="check-outer">
+                            <input type="checkbox">
+                        </div>
+                        <div class="img-outer">
+                            <img src="//img10.360buyimg.com/mobilecms/s300x300_jfs/t1/179030/32/5201/198276/60a689ecEf3f0b49f/4b3397bbeb320e23.jpg!q70.dpg.webp" alt="">
+                        </div>
+                        <div class="img-info">
+                            <h3>
+                                万代BANDAI高达拼插拼装模型玩具 RG 1/144 敢达【送支架】 RG03 空战型突击强袭 5061613
+                            </h3>
+                            <p>RG03 空战型突击强袭 5061613</p>
+                            <div class="s-s-price flex-right flex-box">
+                                <b>￥<i>159.90</i></b>
+                                <span>1</span>
+                            </div>
+                            <div class="s-s-del">
+                                <a href="javascript:void(0)">移出关注</a> |
+                                <a href="javascript:void(0)">删除</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="s-mine" v-route="mine">
+            <div class="s-mine-head flex-box">
+                <div class="s-d-nav-1 flex-box flex-right s-m-head-left">
+                    <a href="#home"><span class="iconfont icon-iconfontjiantou2 back-prev"></span></a>
+                </div>
+                <div class="s-d-nav-2 s-m-head-center">
+                    京东登录注册
+                </div>
+                <div class="s-d-nav-1 flex-box flex-right s-m-head-right">
+                    
+                </div>
+            </div>
+            <div class="s-mine-con s-mine-login" mine-tab="login">
+                <div class="form-group">
+                    <div class="clear-float">
+                        <input id="cname" placeholder="请输入账号" value="haofusheng" name="username" minlength="2" type="text" class="form-control user"
+                            required="" aria-required="true">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 clear-float">
+                        <input id="cemail" placeholder="请输入密码" value="123456" type="password" class="form-control pass" name="password" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="typename"></p>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 clear-float my-code">
+                        <label class="col-sm-3 control-label">验证码：</label>
+                        <input id="t-code" style="width: 40%;display: inline-block;" type="text" class="form-control pass" name="code" >
+                        <img style="margin-left: 20%;" src="http://localhost:3000/getcode" alt="">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 col-sm-offset-3 user-control">
+                        <button class="btn btn-primary disa" type="submit" id="sub-btn" disabled>提交</button>
+                        <a class="btn btn-default" style="display: inline-block;margin-left: 40px;" href="http://localhost:8080/dist/#mine/register">注册</a>
+
+                        <a style="margin-left: 40px;" class="float-right" href="http://localhost:3000/fontpass.html">忘记密码？</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="s-mine-con s-mine-register" mine-tab="register">
+                <div class="form-group">
+                    <div class="clear-float">
+                        <input id="rname" placeholder="请输入账号" value="haofusheng" name="username" minlength="2" type="text" class="form-control user"
+                            required="" aria-required="true">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 clear-float">
+                        <input id="rpass" placeholder="请输入密码" value="123456" type="password" class="form-control pass" name="password" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 clear-float">
+                        <input id="repass" placeholder="请再次确认密码" value="123456" type="password" class="form-control pass" name="password" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="typename"></p>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 col-sm-offset-3 user-control">
+                        <button class="btn btn-primary disa" type="submit" id="r-sub-btn" disabled>注册</button>
+                        <a class="btn btn-default" style="display: inline-block;margin-left: 40px;" href="http://localhost:8080/dist/#mine/login">返回登录</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="" mine-tab="mymine">
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+                <div>
+                    我的主页
+                </div>
+            </div>
+        </div>
+        <div class="s-detail" v-route="detail">
+            <div class="s-detail-nav d-decration">
+                <div class="s-d-nav-1 flex-box flex-right">
+                    <a href="#home"><span class="iconfont icon-iconfontjiantou2 back-prev"></span></a>
+                    <span class="iconfont icon-zhankai open-more"></span>
+                </div>
+                <div class="s-d-nav-2 flex-box flex-right">
+                    <a href="#home"><span class="iconfont icon-iconfontjiantou2 back-prev"></span></a>
+                    <ul class="clear-float">
+                        <li class="active">商品</li>
+                        <li>款式</li>
+                        <li>推荐</li>
+                        <li>详情</li>
+                    </ul>
+                    <span class="iconfont icon-zhankai open-more"></span>
+                </div>
+            </div>
+            <div class="s-detail-slide-o">
+                <div class="s-detail-slide" slide-start="on">
+                    <ul>
+                        <!-- <li>
+                            <a href="javascript:void(0)">
+                                <img
+                                    src="//m.360buyimg.com/mobilecms/s750x750_jfs/t1/144871/29/20128/381809/5fe5d2a7E84e18046/454413fbc119ca49.jpg!q80.dpg.webp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img
+                                    src="//m.360buyimg.com/mobilecms/s1125x1125_jfs/t1/143158/1/19970/162678/5fe5d1faE5be00664/86386a95739868cf.jpg!q70.dpg.webp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img
+                                    src="//m.360buyimg.com/mobilecms/s750x750_jfs/t1/144871/29/20128/381809/5fe5d2a7E84e18046/454413fbc119ca49.jpg!q80.dpg.webp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img
+                                    src="//m.360buyimg.com/mobilecms/s1125x1125_jfs/t1/143158/1/19970/162678/5fe5d1faE5be00664/86386a95739868cf.jpg!q70.dpg.webp">
+                            </a>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="s-detail-title detail-box-bottom">
+                <div class="flex-box flex-right">
+                    <p class="d-title-price"><i>￥<strong>49.90</strong></i><del>￥116.00</del></p>
+                    <div class="flex-box d-title-set">
+                        <div>
+                            <span class="iconfont icon-jiageguanxiguanli"></span>
+                            <p>降价提醒</p>
+                        </div>
+                        <div>
+                            <span class="iconfont icon-shoucang1"></span>
+                            <p>收藏</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="s-detail-title-text">高达模型高达mg大班高高益智拼装手办HG1/144能天使主天使自由命运七剑 00R强化型机组 高高HG）</h3>
+                <p></p>
+            </div>
+            <div class="s-detail-express detail-box d-decration">
+                <ul>
+                    <li>
+                        <p class="flex-box flex-right"><i><b>已选</b><span class="s-d-e-info-item">00R强化型机组 高高HG），1个</span></i><img
+                                src="../../public/images/list_open.png"></p>
+                    </li>
+                    <li>
+                        <p class="flex-box flex-right"><i><b>送至</b><span class="s-d-e-city">北京朝阳区三环到四环之间</span></i><img
+                                src="../../public/images/list_open.png"></p>
+                    </li>
+                    <li>
+                        <p class="flex-box flex-right"><i><b>运费</b><span>在线支付免运费</span></i><img
+                                src="../../public/images/list_open.png"></p>
+                    </li>
+                </ul>
+                <div class="detail-box s-d-express-server clear-float">
+                    <dl class="flex-box">
+                        <dd><span class="iconfont icon-zhengque"></span>商家发货&售后</dd>
+                        <dd><span class="iconfont icon-zhengque"></span>七天无理由退货</dd>
+                        <dd><span class="iconfont icon-zhengque"></span>15天价保</dd>
+                        <dd><span class="iconfont icon-zhengque"></span>送运费险</dd>
+                    </dl>
+                    <img class="float-right" src="../../public/images/list_open.png">
+                </div>
+            </div>
+            <div class="s-detail-shop detail-box">
+                <a href="javascript:void(0)">
+                    <div class="s-d-shop-nav clear-float">
+                        <div class="shop-nav-head">
+                            <img
+                                src="//img10.360buyimg.com/cms/jfs/t1/127584/30/19006/119279/5fb61bb4E57ae231b/5d85b16072829fbe.jpg!q70.dpg.webp">
+                        </div>
+                        <div class="shop-nav-name">
+                            <h4>欧仕锋旗舰店</h4>
+                            <p>店铺星级: <span class="tall">4.0</span></p>
+                        </div>
+                    </div>
+                    <div class="s-d-shop-con flex-box flex-right">
+                        <div class="shop-con-opa clear-float">
+                            <div>
+                                <b>681</b>
+                                <p>粉丝人数</p>
+                            </div>
+                            <div>
+                                <b>52</b>
+                                <p>全部商品</p>
+                            </div>
+                        </div>
+                        <div class="shop-star">
+                            <ul>
+                                <li><i>评价</i><span class="low">8.92 | 低</span></li>
+                                <li><i>评价</i><span class="tall">9.16 | 中</span></li>
+                                <li><i>评价</i><span class="tall">9.03 | 中</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <div class="s-d-shop-btn flex-box flex-right">
+                    <a href="javascript:void(0)" class="collect-shop">
+                        <span class="iconfont icon-shoucang1"></span>关注店铺
+                    </a>
+                    <a href="javascript:void(0)" class="go-shop">
+                        <span class="iconfont icon-dianpu"></span>进入店铺
+                    </a>
+                </div>
+            </div>
+
+            <div class="s-detail-recycle">
+                <a href="javascript:void(0)" class="detail-box flex-box flex-right">
+                    <div class="s-d-recycle-nav">
+                        <p><span class="iconfont icon-jiageguanxiguanli"></span><b>高价回收</b></p>
+                        <i>旧品回收，免费估价，极速到账</i>
+                    </div>
+                    <div class="s-d-recycle-btn">
+                        <span class="iconfont icon-zhcc_xiangyoujiantou"></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="s-detail-like detail-box d-decration">
+                <h3><span></span> 猜你喜欢</h3>
+                <ul>
+                    <li>
+                        <ol class="flex-box flex-right">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/135163/22/12558/217100/5f8a5ecfE072aa182/085a427b03811447.jpg!q70.dpg.webp">
+                                    </div>
+                                    <p>菲利捷玩具 高达模型大班高高 HG 1/144 能天使主天使自由命运 00r七剑 强袭自由高达(支架 高高)</p>
+                                    <strong><i>￥</i>49.73</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/163494/37/7611/246254/60339240E0794b604/72d88649b845f657.jpg!q70.dpg.webp">
+                                    </div>
+
+                                    <p>高达大班高高盲盒独角兽 红异端 强袭自由 能天使 拼装玩具 盲盒随机1盒HG或MG</p>
+                                    <strong><i>￥</i>47.73</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/150622/36/3080/69472/5f86fe0bEe667a405/a30c7507f901e640.jpg!q70.dpg.webp">
+                                    </div>
+
+                                    <p>现货 拼装手办 高达模型MG1/100雪崩能天使 飞翼 独角兽 强袭自由 红异端 紫色掉毛天使玩具 MG飞翼 可变形【 地台+水贴】可配模心MG羽毛台</p>
+                                    <strong><i>￥</i>258.00</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/135163/22/12558/217100/5f8a5ecfE072aa182/085a427b03811447.jpg!q70.dpg.webp">
+                                    </div>
+                                    <p>菲利捷玩具 高达模型大班高高 HG 1/144 能天使主天使自由命运 00r七剑 强袭自由高达(支架 高高)</p>
+                                    <strong><i>￥</i>49.73</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/163494/37/7611/246254/60339240E0794b604/72d88649b845f657.jpg!q70.dpg.webp">
+                                    </div>
+
+                                    <p>高达大班高高盲盒独角兽 红异端 强袭自由 能天使 拼装玩具 盲盒随机1盒HG或MG</p>
+                                    <strong><i>￥</i>47.73</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="c-d-like-img">
+                                        <img
+                                            src="//img14.360buyimg.com/mobilecms/s270x270_jfs/t1/150622/36/3080/69472/5f86fe0bEe667a405/a30c7507f901e640.jpg!q70.dpg.webp">
+                                    </div>
+
+                                    <p>现货 拼装手办 高达模型MG1/100雪崩能天使 飞翼 独角兽 强袭自由 红异端 紫色掉毛天使玩具 MG飞翼 可变形【 地台+水贴】可配模心MG羽毛台</p>
+                                    <strong><i>￥</i>258.00</strong>
+                                </a>
+                            </li>
+
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="s-detail-option d-decration">
+                <div class="s-d-option-nav detail-box">
+                    <ul class="flex-box flex-right">
+                        <li d-tab-show="intr"><a href="#detail/intr">商品介绍</a></li>
+                        <li d-tab-show="param"><a href="#detail/param">规格参数</a></li>
+                        <li d-tab-show="aftersale"><a href="#detail/aftersale">售后保障</a></li>
+                    </ul>
+                </div>
+                <div class="sd-option-con detail-box-top">
+                    <div v-route="detail/intr" class="s-o-con-intr" style="display: block;">
+                        <ul>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWareDetail/jfs/t1/151919/12/18151/146810/60234a90E2f9d99a6/66a970118567cd99.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWareDetail/jfs/t1/156139/21/9502/153272/60234a90Eef9df796/f2c267aae32cccae.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t21490/342/2644162805/259011/ecef1f5e/5b5eabcbN8d7caaf8.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t22687/73/1405871575/244649/fa21ff61/5b5eabccN350f03e5.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t23746/119/1415512576/240479/d9742979/5b5eabccN41af9d3b.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWareDetail/jfs/t1/151919/12/18151/146810/60234a90E2f9d99a6/66a970118567cd99.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWareDetail/jfs/t1/156139/21/9502/153272/60234a90Eef9df796/f2c267aae32cccae.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t21490/342/2644162805/259011/ecef1f5e/5b5eabcbN8d7caaf8.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t22687/73/1405871575/244649/fa21ff61/5b5eabccN350f03e5.jpg!q70.dpg.webp">
+                            </li>
+                            <li>
+                                <img
+                                    src="//img30.360buyimg.com/popWaterMark/jfs/t23746/119/1415512576/240479/d9742979/5b5eabccN41af9d3b.jpg!q70.dpg.webp">
+                            </li>
+                        </ul>
+                    </div>
+                    <div v-route="detail/param" class="s-o-con-param">
+                        <h3>商品参数</h3>
+                        <div class="o-con-param-text">
+                            <ul>
+                                <li>
+                                    <span>商品编号</span><i>190832948298</i>
+                                </li>
+                                <li>
+                                    <span>商品名</span><i>高达模型</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div v-route="detail/aftersale" class="s-o-con-aftersale">
+                        <div class="detail_item p_cmt" id="detail3">
+                            <div id="detail3Normal">
+                                <div id="detServer"></div>
+                                <div id="skusfkc" style="display: none;">
+                                    <div class="mod_tit_line">
+                                        <h3>商品提示</h3>
+                                    </div>
+                                    该商品超时未付款，订单将被自动取消
+                                </div>
+                                <div id="normalServerPromise" style="display:none;"></div>
+
+                                <div id="serverPromise" style="display: none;">
+                                    <div class="mod_tit_line">
+                                        <h3>服务承诺</h3>
+                                    </div>
+                                    京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和<a
+                                        target="_self"
+                                        href="//wqs.jd.com/my/cart/extraYunfeiRule.shtml?detail=1">运费政策</a>，请您放心购买！
+                                    <div class="for_separator"></div>
+                                    注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                                </div>
+                                <div id="freshServerPromise" style="display:none;">
+                                    <div class="mod_tit_line">
+                                        <h3>售后服务</h3>
+                                    </div>
+                                    1、生鲜“优鲜赔”绿色通道
+                                    <div class="for_separator"></div>
+                                    “优鲜赔”服务是为魔镜等级S2及以上的京东优质客户提供的售后特色服务，符合条件的生鲜自营订单商品有破损或腐坏等问题，可以在商品签收后48小时内提交“优鲜赔”申请，提交申请后100分钟内审核通过后即享补偿或退款，无需返回商品，为客户节省了返回商品的物流等待时间和收货检测的处理时间（非鲜活易腐类商品除外）。
+                                    <div class="for_separator"></div>
+                                    2、专业生鲜客服团队—让您售后无忧
+                                    <div class="for_separator"></div>
+                                    微信在线客服：JD-fresh
+                                    <div class="for_separator"></div>
+                                    京东生鲜专享客服电话：400-606-3311
+                                    <div class="for_separator"></div>
+                                    3、京东自营商品开具机打发票或电子发票
+                                    <div class="for_separator"></div>
+                                    如您发现商品有质量问题，请在收到商品之时起48小时内及时提交申请或联系客服处理。
+                                </div>
+                                <div>
+                                    <div class="mod_tit_line">
+                                        <h3>权利声明</h3>
+                                    </div>
+                                    京东商城上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东商城重要的经营资源，未经许可，禁止非法转载使用。
+                                    <div class="for_separator"></div>
+                                    <p><b>注：</b>本站商品信息均来自于厂商，其真实性、准确性和合法性由信息拥有者（厂商）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+                                </div>
+                            </div>
+                            <div id="priceDescDetail">
+                                <div class="mod_tit_line">
+                                    <h3>价格说明</h3>
+                                </div>
+                                <p><strong>1.京东价：</strong>京东价为商品的销售价，是您最终决定是否购买商品的依据。</p>
+                                <p><strong>2.划线价：</strong>商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。
+                                </p>
+                                <p><strong>3.折扣：</strong>如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。
+                                </p>
+                                <p><strong>4.异常问题：</strong>商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。
+                                </p>
+                            </div>
+                            <div id="ecoTip" style="display: none;">
+                                <div class="mod_tit_line">
+                                    <h3>能效标识说明</h3>
+                                </div>
+                                <p>根据国家相关能效标识法规和标准的要求，京东自营在售商品的能效标识图样，将会逐步替换为新版能源效率标识贴；受能效标识标准变化影响，部分产品的新版和旧版能效标识，在能效等级、测试值等方面会有差异，但产品实际性能完全一样，并不影响购买和使用，加贴新版或旧版能效标识的商品会随机发放，请您放心购买；如有疑问，请在购买前通过咚咚或来电咨询。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s-detail-foot">
+                <img src="../../public/images/detail_logo.png">
+            </div>
+
+            <div class="s-detail-filedbtn">
+                <div class="flex-box flex-right s-detail-con">
+                    <div class="flex-box flex-right shop-btn">
+                        <a href="javascript:void(0)">
+                            <span class="iconfont icon-dianpu"></span>
+                            <p>店铺</p>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="iconfont icon-kefu"></span>
+                            <p>客服</p>
+                        </a>
+                        <a href="http://localhost:8080/dist/#shopcar">
+                            <span class="iconfont icon-gouwuche shopouter">
+                                <i v-bind="storemain.shop_num" class="shopnum">0</i>
+                            </span>
+                            <p>购物车</p>
+                        </a>
+                    </div>
+                    <div class="flex-box flex-right control-car-btn">
+                        <a href="javascript:void(0)" class="go-car-btn">加入购物车</a>
+                        <a href="javascript:void(0)" class="shop-btn">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab_bar">
+        <ul class="flex-box">
+            <li class="home">
+                <a href="#home">
+                    <img tab_index="0" src="../../public/images/home_on.png">
+                    <img tab_index="0" src="../../public/images/home_off.png">
+                </a>
+            </li>
+            <li class="classify">
+                <a href="#classify">
+                    <img tab_index="1" src="../../public/images/classify_on.png">
+                    <img tab_index="1" src="../../public/images/classify_off.png">
+                </a>
+            </li>
+            <li class="gift">
+                <a href="javascript:void(0)">
+                    <img tab_index="2" src="../../public/images/jingxi_off.png">
+                    <img tab_index="2" src="../../public/images/jingxi_off.png">
+                </a>
+            </li>
+            <li class="shopcar">
+                <a href="#shopcar">
+                    <img tab_index="3" src="../../public/images/shopcar_on.png">
+                    <img tab_index="3" src="../../public/images/shopcar_off.png">
+                </a>
+                <i v-bind="storemain.shop_num" class="shop-num">0</i>
+            </li>
+            <li class="mine">
+                <a href="#mine">
+                    <img tab_index="4" src="../../public/images/mine_on.png">
+                    <img tab_index="4" src="../../public/images/mine_off.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</body>
+
+</html>

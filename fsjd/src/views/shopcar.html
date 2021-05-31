@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/ts/main.js"></script>
+    <script src="./scripts/ts/shopcar.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="layout-s">
+        <div class="cap-outer">
+            <div class="cap-content area-s clear-float">
+                <div class="cap-loc">
+                    <span class="iconfont icon-shouye"></span>
+                    <a href="javascript: void(0);"><a class="callback" href="./index.html">京东首页</a></a>
+                    <span class="iconfont icon-dingwei"></span>
+                    <a href="javascript: void(0);">北京</a>
+                </div>
+                <ul class="float-right clear-float">
+                    <li class="cap-user">
+                        <a href="javascript:void(0);">你好，请登录</a>
+                        <a href="javascript:void(0);">
+                            <b>免费注册</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">我的订单</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">我的京东</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">京东会员</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <b>企业采购</b>
+                        </a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">客户服务</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">网站导航</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">手机京东</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="car-search area-s clear-float">
+            <a href="./index.html">
+                <img src="../../public/images/login_logo.png" alt="">
+            </a>
+            <div class="car-search-box float-right">
+                <input type="text" class="nav-search-item">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-sousuo"></span>
+                </a>
+                <ul class="nav-search-box">
+
+                </ul>
+            </div>
+        </div>
+        <div class="car-goods area-s">
+            <div class="cap-all-g clear-float area-s">
+                <div class="cap-a-num">全部商品<span class="shop-num">0</span></div>
+                <div class="float-right city-box">
+                    <div>
+                        <div class="site-city"><i v-bind="initCity.prov"></i><i v-bind="initCity.town"></i><i v-bind="initCity.county"></i><span class="iconfont icon-zhankai"></span></div>
+                        <div class="city-list">
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <col width=34>
+                <col width=100>
+                <col width=200>
+                <col width=220>
+                <col width=130>
+                <col width=80>
+                <col width=100>
+                <col width=130>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" class="check-all" check-type="check-all">
+                        </th>
+                        <th>全选</th>
+                        <th>商品</th>
+                        <th></th>
+                        <th class="t-center">单价</th>
+                        <th class="t-center">数量</th>
+                        <th class="t-right">小计</th>
+                        <th class="h-goods-d">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="goods-shop">
+                        <td>
+                            <input type="checkbox" class="check-shop" check-type="check-shop">
+                        </td>
+                        <td colspan="7"><a href="javascript:void(0)">哆啦动漫专营店</a><a href="javascript:void(0)"><span class="iconfont icon-huaban28"></span></a></td>
+                    </tr>
+                    <tr class="goods-info active">
+                        <td class="goods-check">
+                            <div>
+                                <input type="checkbox" class="check-item">
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)">
+                                <img class="goods-img" src="https://img14.360buyimg.com/n0/s80x80_jfs/t2314/293/2115304443/369560/be85ed3/5694bce5N3ad094ca.jpg.dpg"
+                                    alt="">
+                            </a>
+                        </td>
+                        <td class="goods-i-title"><div>
+                            <a href="javascript:void(0)">万代BANDAI高达拼插拼装模型玩具 RG 1/144 敢达【送支架】 RG14 强袭自由 5061617</a>
+                        </div></td>
+                        <td class="goods-i-info"><p>RG14 强袭自由 5061617</p></td>
+                        <td class="goods-price"><p>￥219.90</p></td>
+                        <td class="goods-num">
+                            <div class="goods-counter clear-float">
+                                <span class="goods-counter-de">-</span>
+                                <input class="goods-counter-item" type="text">
+                                <span class="goods-counter-in">+</span>
+                            </div>
+                        </td>
+                        <td class="goods-sum-price">
+                            <p>¥219.90</p>
+                        </td>
+                        <td class="goods-delete">
+                            <div>
+                                <p><a href="javascript:void(0)">删除</a></p>
+                                <p><a href="javascript:void(0)">移出关注</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="goods-info">
+                        <td class="goods-check">
+                            <div>
+                                <input type="checkbox" class="check-item">
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)">
+                                <img class="goods-img" src="https://img14.360buyimg.com/n0/s80x80_jfs/t2314/293/2115304443/369560/be85ed3/5694bce5N3ad094ca.jpg.dpg"
+                                    alt="">
+                            </a>
+                        </td>
+                        <td class="goods-i-title"><div>
+                            <a href="javascript:void(0)">万代BANDAI高达拼插拼装模型玩具 RG 1/144 敢达【送支架】 RG14 强袭自由 5061617</a>
+                        </div></td>
+                        <td class="goods-i-info"><p>RG14 强袭自由 5061617</p></td>
+                        <td class="goods-price"><p>￥219.90</p></td>
+                        <td class="goods-num">
+                            <div class="goods-counter clear-float">
+                                <span class="goods-counter-de">-</span>
+                                <input class="goods-counter-item" type="text">
+                                <span class="goods-counter-in">+</span>
+                            </div>
+                        </td>
+                        <td class="goods-sum-price">
+                            <p>¥219.90</p>
+                        </td>
+                        <td class="goods-delete">
+                            <div>
+                                <p><a href="javascript:void(0)">删除</a></p>
+                                <p><a href="javascript:void(0)">移出关注</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="goods-shop">
+                        <td>
+                            <input type="checkbox" class="check-shop">
+                        </td>
+                        <td colspan="7"><a href="javascript:void(0)">哆啦动漫专营店</a><a href="javascript:void(0)"><span class="iconfont icon-huaban28"></span></a></td>
+                    </tr>
+                    <tr class="goods-info">
+                        <td class="goods-check">
+                            <div>
+                                <input type="checkbox" class="check-item">
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)">
+                                <img class="goods-img" src="https://img14.360buyimg.com/n0/s80x80_jfs/t2314/293/2115304443/369560/be85ed3/5694bce5N3ad094ca.jpg.dpg"
+                                    alt="">
+                            </a>
+                        </td>
+                        <td class="goods-i-title"><div>
+                            <a href="javascript:void(0)">万代BANDAI高达拼插拼装模型玩具 RG 1/144 敢达【送支架】 RG14 强袭自由 5061617</a>
+                        </div></td>
+                        <td class="goods-i-info"><p>RG14 强袭自由 5061617</p></td>
+                        <td class="goods-price"><p>￥219.90</p></td>
+                        <td class="goods-num">
+                            <div class="goods-counter clear-float">
+                                <span class="goods-counter-de">-</span>
+                                <input class="goods-counter-item" type="text">
+                                <span class="goods-counter-in">+</span>
+                            </div>
+                        </td>
+                        <td class="goods-sum-price">
+                            <p>¥219.90</p>
+                        </td>
+                        <td class="goods-delete">
+                            <div>
+                                <p><a href="javascript:void(0)">删除</a></p>
+                                <p><a href="javascript:void(0)">移出关注</a></p>
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="car-goods-all clear-float">
+                <div><input type="checkbox" class="check-all" check-type="check-all">全选</div>
+                <div class="car-setall">
+                    <a href="javascript:void(0)" class="delete-all">删除选中的商品</a>
+                    <a href="javascript:void(0)" class="like-all">移入关注</a>
+                    <a href="javascript:void(0)" class="clear-car">清理购物车</a>
+                </div>
+                <div class="clear-float float-right car-price-all">
+                    <span>已选中<i class="check-num">0</i>件商品</span>
+                    <p>总价:<b class="sum-price">￥0</b><span class="iconfont icon-dengpao"></span></p>
+                    <a href="javascript:void(0)">去结算</a>
+                </div>
+            </div>
+        </div>
+        <div class="car-empty clear-float area-s">
+            <div>
+                <img src="../../public/images/car_empty.png">
+            </div>
+            <div>
+                <p>购物车空空的哦~，去看看心仪的商品吧~</p>
+                <a href="./index.html">去购物</a>
+            </div>
+        </div>
+
+        <a class="back-car-top" href="#layout-s">
+            <i>顶部</i>
+            <span class="iconfont icon-xialajiantou1"></span>
+        </a>
+
+    </div>
+</body>
+
+</html>

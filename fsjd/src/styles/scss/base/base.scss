@@ -1,0 +1,46 @@
+:root{
+    --red-color--:#e1251b;
+    --text-gray--:#999;
+    --text-gray-deep--:#666;
+    --text-black--:#333;
+    --back-gray--:#e3e4e5;
+    --red-white-color--:#e1251b;
+    --border-color--:#ebebeb;
+    --row-line--:#dddddd;
+    --cap-back--:#f7f7f7;
+    --cap-text--:#666;
+}
+
+body{
+    font-size: 12px;
+    color: var(--text-black--);
+}
+
+body,ul,ol,li,dl,dd,dt,p,h2,h3,h4,h5,input{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-black--);
+}
+
+a:hover{
+    color: var(--red-color--);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+i{
+    font-style: normal;
+}
+b{
+    font-weight: normal;
+}

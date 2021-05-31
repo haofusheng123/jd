@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/ts/main.js"></script>
+    <script src="./scripts/ts/detail.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="layout">
+        <div class="cap-outer">
+            <div class="cap-content area clear-float">
+                <div class="cap-loc">
+                    <span class="iconfont icon-shouye"></span>
+                    <a href="javascript: void(0);"><a class="callback" href="./index.html">京东首页</a></a>
+                    <span>
+                        <span class="iconfont icon-dingwei"></span>
+                        <a href="javascript: void(0);">北京</a>
+                    </span>
+                </div>
+                <ul class="float-right clear-float">
+                    <li class="cap-user">
+                        <a href="javascript:void(0);">你好，请登录</a>
+                        <a href="javascript:void(0);">
+                            <b>免费注册</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">我的订单</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">我的京东</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">京东会员</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <b>企业采购</b>
+                        </a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">客户服务</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">网站导航</a>
+                        <span class="iconfont icon-zhankai"></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">手机京东</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-outer">
+            <div class="nav-content area clear-float">
+                <div class="nav-detail-logo">
+                    <a href="./index.html"><img src="../public/images/logo.png"></a>
+                </div>
+                <div class="nav-center">
+                    <div class="nav-search clear-float">
+                        <div class="nav-search-c nav-d-search">
+                            <input type="text" class="nav-search-item" placeholder="电脑主机i7">
+                            <a href="javascript: void(0);"><span>搜全站</span></a>
+                            <a href="javascript: void(0);" class="searshop"><span>搜本店</span></a>
+                            <ul class="nav-search-box">
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav-center-text nav-center-text-detail clear-float">
+                        <li><a href="javascript: void(0);" class="text-red">电子烟戒烟</a></li>
+                        <li><a href="javascript: void(0);">打火机充电</a></li>
+                        <li><a href="javascript: void(0);">创意礼品</a></li>
+                        <li><a href="javascript: void(0);">生日礼物</a></li>
+                        <li><a href="javascript: void(0);">绿植</a></li>
+                        <li><a href="javascript: void(0);">美妆礼品</a></li>
+                        <li><a href="javascript: void(0);">鲜花</a></li>
+                        <li><a href="javascript: void(0);">戒烟器</a></li>
+                    </ul>
+                </div>
+                <div class="nav-adv float-right">
+                    <div class="nav-shopcar">
+                        <span class="iconfont icon-icon8">
+                            <i class="shop-num">0</i>
+                        </span>
+                        <a href="./shopcar.html">我的购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-banner">
+            <a href="javascript: void(0)"></a>
+        </div>
+        <div class="d-option">
+            <div class="d-option-content clear-float area">
+                <ul class="clear-float option-info-list">
+                    <li><a href="javascript: void(0)">商品</a><span class="iconfont icon-jiantouarrow487"></span></li>
+                    <li><a href="javascript: void(0)">礼品</a><span class="iconfont icon-jiantouarrow487"></span></li>
+                    <li><a href="javascript: void(0)">礼品</a><span class="iconfont icon-jiantouarrow487"></span></li>
+                    <li><a href="javascript: void(0)">创意</a><span class="iconfont icon-jiantouarrow487"></span></li>
+                </ul>
+                <div class="d-option-shop clear-float float-right">
+                    <p class="option-shop-name"><span class="option-s-self">自营</span><a href="javascript: void(0)"></a>
+                    </p>
+                    <p><span class="iconfont icon-huaban28 o-server"></span><a href="javascript: void(0)">联系客服</a></p>
+                    <p><span class="iconfont icon-tianchongxing-"></span><a href="javascript: void(0)">关注店铺</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-content area">
+            <div class="c-goods-show">
+
+            </div>
+            <div class="c-goods-text">
+                <h3></h3>
+                <div class="goods-text-disc clear-float">
+                    <div class="g-disc-left">
+                        <div class="clear-float">
+                            <div>京东价</div><b>￥<i></i></b><a href="javascript:void(0)">降价通知</a>
+                        </div>
+                        <div class="clear-float">
+                            <div>促&emsp;销</div><span>满减</span>满150元减10元，满200元减20元，满300元减30元
+                        </div>
+                        <div class="clear-float">
+                            <div></div><span>多买优惠</span><span>满额返券</span>
+                        </div>
+                    </div>
+                    <div class="g-disc-right float-right">
+                        <p>累计评价</p>
+                        <a href="javascript:void(0)"></a>
+                        <p class="promotion">展开促销</p>
+                    </div>
+                </div>
+                <div class="transport">
+                    <div class="g-site clear-float">
+                        <span>配送至</span>
+                        <div class="site-city-outer clear-float">
+                            <div class="float-right city-box">
+                                <div>
+                                    <div class="site-city"><i v-bind="initCity.prov"></i><i v-bind="initCity.town"></i><i v-bind="initCity.county"></i><span class="iconfont icon-zhankai"></span></div>
+                                    <div class="city-list">
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </span></div>
+                        <strong>有货</strong>
+                        <b>支持</b>
+                        <i>可配送港澳台</i>
+                        <i>7天价保</i>
+                        <b>免运费</b>
+                    </div>
+                    <div class="site-text">
+                        <p>由<a href="javascript:void(0)"> 乔康礼品专营店 </a>负责发货, 并提供售后服务.
+                            今日16:30前完成下单，预计5月30日23:00前发货，6月4日24:00前送达</p>
+                    </div>
+                </div>
+                <div class="clear-float c-text-option">
+                    <!-- <div class="c-text-option-name">选择颜色</div>
+                    <div class="c-text-option-content">
+                        <ul class="clear-float">
+                            <li class="active">
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK【旗舰套装版】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK【旗舰套装版】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK【旗舰套装版】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK【旗舰套装版】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img
+                                        src="//img10.360buyimg.com/n9/s40x40_jfs/t1/170145/15/16191/115965/6067d5eeE270a5db3/6d7b710cc8ed99bb.jpg">
+                                    <span>仿古铜-AK【旗舰套装版】</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="c-counter clear-float">
+                    <div class="c-counter-show clear-float">
+                        <input type="text" class="counter-con">
+                        <div class="counter-show-btn">
+                            <span class="i-btn">+</span>
+                            <span class="d-btn">-</span>
+                        </div>
+                    </div>
+                    <a class="c-gocar" href="javascript:void(0)">加入购物车</a>
+                </div>
+                <div class="c-goods-hint">
+                    <span>温馨提示</span>·7天无理由退货（合约版不支持）
+                </div>
+            </div>
+
+            <div class="c-goods-look">
+                
+            </div>
+        </div>
+
+        <div class="d-info area clear-float">
+            <div class="d-info-left">
+                <div class="d-info-shop">
+                    <h3>大白鲸动漫专营店</h3>
+                    <div class="i-shop-star">
+                        <p><span>店铺星级</span><i class="tall">4.5</i></p>
+                        <p><span>商品评价</span><i class="tall">9.89 高</i></p>
+                        <p><span>物流履约</span><i class="tall">9.65 高</i></p>
+                        <p><span>售后服务</span><i class="tall">8.85 中</i></p>
+                    </div>
+                    <div class="i-shop-btn clear-float">
+                        <a href="javascript:void(0)"><span class="iconfont icon-jindian"></span>进店逛逛</a>
+                        <a href="javascript:void(0)"><span class="iconfont icon-tianchongxing-"></span>关注店铺</a>
+                    </div>
+                </div>
+                <div class="d-info-search">
+                    <h3>店内搜索</h3>
+                    <div class="info-search-content">
+                        <p class="is-key"><span>关键字：</span><input type="text"></p>
+                        <p class="is-price"><span>价&emsp;格：</span><input type="text"> 到 <input type="text"></p>
+                        <a href="jvascript:void(0)"><button>搜索</button></a>
+                    </div>
+                </div>
+                <div class="d-info-classify">
+                    <h3>店内分类</h3>
+                    <ul>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>女孩玩具</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>男孩玩具</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>玩具枪</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>MGA</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>高达模型</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>模型工具</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>精品手办</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>奥特曼玩具</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>假面骑士</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>漫威超级英雄</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>森贝儿森林家族</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>EVA新福音战士</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>海贼王拼装模型</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>七龙珠拼装模型</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>星战STAR WAR</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>精灵宝可梦</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>孩之宝</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>动物仿真模型玩具</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>多美(TAKARA TOMY)</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>变形金刚</a></li>
+                        <li><a href="javascript: void(0)"><span class="iconfont icon-plus-square-fill"></span>其他玩具</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-shop-goods">
+                    <h3>店铺热销</h3>
+                    <div class="shop-goods-list shop-hot-goods">
+                        
+                    </div>
+                </div>
+                <div class="d-shop-goods d-shop-new">
+                    <h3>店铺新品</h3>
+                    <div class="shop-goods-list shop-new-goods">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="d-info-right">
+                <div class="info-right-cap">
+                    <h3>陪伴计划·好券任领·尊享福利价</h3>
+                    <div class="right-cap-con clear-float">
+                        <img src="../../public/images/d-info.png">
+                        <div class="clear-float right-cap-con-text">
+                            <p>生日/预产期：<input type="text"></p>
+                            <p>昵称：<input type="text"></p>
+                            <p>性别：
+                                <input type="radio" name="sex"> 王子
+                                <input type="radio" name="sex"> 公主
+                                <input type="radio" name="sex"> 未知
+                            </p>
+                            <p>
+                                <button>快速加入</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-right-tab">
+                    <div class="right-tab-cap">
+                        <ul class="clear-float">
+                            <li class="active">商品介绍</li>
+                            <li>规格与包装</li>
+                            <li>售后保障</li>
+                            <li>商品评价(<span class="tab-cap-price">0</span>)</li>
+                            <li>本店好评商品</li>
+                            <li class="float-right">
+                                <i>加入购物车</i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-tab-con">
+                        <ul class="clear-float">
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-right-img">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

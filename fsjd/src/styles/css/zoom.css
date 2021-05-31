@@ -1,0 +1,31 @@
+.c-goods-small {
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-goods-small img{
+  width: 100%;
+}
+.c-goods-big{
+  position: absolute;
+  left: 352px;
+  top: 0;
+  width: 540px;
+  height: 540px;
+  overflow: hidden;
+  z-index: 99;
+}
+.c-goods-big img{
+  display: none;
+}
+.small-shadow{
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

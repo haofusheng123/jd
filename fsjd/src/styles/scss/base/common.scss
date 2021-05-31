@@ -1,0 +1,111 @@
+.show-read-back:hover{
+    color: #fff;
+    background: var(--red-color--);
+}
+
+.clear-float > *{
+    float: left;
+}
+
+.clear-float::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.float-right{
+    float: right;
+}
+
+@media all and (max-width: 1190px) {
+    #layout{
+        background: var(--back-gray--);
+        width: 1190px;
+    }
+}
+
+@media all and (min-width: 1190px) {
+    #layout{
+        background: var(--back-gray--);
+        width: 100%;
+    }
+}
+
+.area{
+    width: 1190px;
+    margin: auto;
+}
+
+.text-red{
+    color: var(--red-color--) !important;
+}
+
+.b-shadow{
+    box-shadow: 0 2px 4px 1px #d3d3d3;
+}
+
+.goods_1{
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+    .goods_1_head{
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            color: #333;
+            line-height: 32px;
+            margin-bottom: 10px;
+            a{
+                color: black;
+                span{
+                    font-size: 12px;
+                    padding: 1px;
+                    color: var(--red-color--);
+                    border: 1px var(--red-color--) solid;
+                    border-radius: 50%;
+                    margin-left: 4px;
+                    position: relative;
+                    top: -2px;
+                    transition: .1s;
+                }
+                &:hover{
+                    span{
+                        background: var(--red-color--);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.option-cap{
+    h2{
+        text-align: center;
+        font-size: 28px;
+        height: 45px;
+        i{
+            background: url(../../public/images/sprite.png);
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+            margin: 0 20px;
+        }
+        .img-right{
+            background-position-x: -25px;
+        }
+    }
+}
+
+.t-center{
+    text-align: center !important;
+}
+.t-right{
+    text-align: right !important;
+}
+.t-left{
+    text-align: left !important;
+}

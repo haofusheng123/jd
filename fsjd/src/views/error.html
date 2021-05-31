@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let code={
+            "200":"登陆成功",
+            "201":"获取数据成功",
+            "202":"商品详情获取成功",
+            "203":"",
+            "400":"密码或者账号不正确",
+            "401":"获取数据失败",
+            "402":"商品详情获取失败",
+            "403":""
+        }
+        let h=document.querySelector("h1");
+        let num=location.hash.slice(1);
+        let key=Object.keys(code).filter(key => {
+            return key==num;
+        })[0];
+        h.textContent=`${code[key]},错误码: ${key}`;
+    </script>
+</body>
+</html>
